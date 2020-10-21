@@ -1,0 +1,47 @@
+{
+  "name": "gs-localstorage",
+  "version": "1.0.0",
+  "description": "Browser Local Storage with expiration date",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "start": "webpack",
+    "test": "mocha",
+    "coveralls": "nyc yarn test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guionardo/gs-localstorage.git"
+  },
+  "author": "Guionardo Furlan",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/guionardo/gs-localstorage/issues"
+  },
+  "homepage": "https://github.com/guionardo/gs-localstorage#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.2.0",
+    "coveralls": "^3.1.0",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1",
+    "jsdom": "11.1.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^8.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "mock-local-storage": "^1.0.4",
+    "nyc": "^15.1.0",
+    "webpack": "^5.1.3",
+    "mock-browser": "^0.92.14"
+  }
+}
