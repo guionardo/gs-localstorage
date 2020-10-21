@@ -31,7 +31,7 @@ describe("Set/Get", () => {
 })
 describe("Get after timeout", () => {
     it("Set value", () => {
-        sleep(10)
+        sleep(100)
         assert.equal(store.get("data_key"), null)
     })
 })
